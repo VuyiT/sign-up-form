@@ -7,6 +7,9 @@ body {
 
 .overall-container {
     width: 100vw;
+    height: 100vh;
+
+    display: flex;
 }
 
 .left-container {
@@ -56,4 +59,100 @@ img {
 
 .right-container {
     font-family: Helvetica, Arial, sans-serif;
+
+    width: 80vw;
+}
+
+h1, h2 {
+    margin-left: 3vh;
+}
+
+.form-block {
+    background-color: white;
+    box-shadow: 0 3px 5px gray,
+    0 3px 5px gray; 
+
+    padding: 3vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block-container {
+    display: flex;
+}
+
+.form-block-left, .form-block-right {
+    width: 50%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+    margin-bottom: 5px;
+}
+
+.form-row input {
+    font-size: 1rem;
+    
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.form-row input:focus {
+    border-color: blue;
+}
+
+.form-row input[type="password"]:invalid, .form-row input[type="email"]:invalid {
+    border-color: red;
+}
+
+.button > button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #253811;
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 30px;
+    margin: 3vh;
+}
+
+.button > button:hover {
+    background-color: #596D48;
+}
+
+.button > button:active {
+    background-color: #1e2c15;
+}
+
+.login-block {
+    font-size: 1rem;
+    font-weight: bold;
+
+    display: flex;
+
+    margin: 0 3vh;
+}
+
+.login-block > .login > a {
+    color: #253811;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.login-block > .login > a:hover {
+    color: #596D48;
+}
+
+.login-block > .login > a:active {
+    color: #1e2c15;
 }
